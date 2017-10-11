@@ -6,13 +6,13 @@ namespace JobsList.Controllers
 {
   public class HomeController : Controller
   {
-    [Route("/")]
+    [HttpGet("/")]
     public ActionResult Index()
     {
       return View();
     }
 
-    [Route("/jobs/list")]
+    [HttpGet("/jobs/list")]
     public ActionResult JobsList()
     {
       List<string> allJobs = Job.GetAll();
