@@ -1,0 +1,12 @@
+<h1>Jobs List</h1>
+<ul>
+  @foreach(string job in Model)
+  {
+    <li>@job</li>
+  }
+</ul>
+<p><a href="/">Add another job</a></p>
+
+<form action="jobs/list/clear" method="post">
+  <button type="submit" name="button" class="btn btn-danger">Clear all jobs</button>
+</form>
